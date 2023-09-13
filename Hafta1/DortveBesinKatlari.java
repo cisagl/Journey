@@ -1,3 +1,5 @@
+package Hafta1;
+
 import java.util.Scanner;
 
 public class DortveBesinKatlari {

@@ -2,7 +2,7 @@ package Hafta1;
 
 import java.util.Scanner;
 
-public class FaktoriyelHesaplama {
+public class UsHesaplama {
     public static void main(String[] args) {
         int n, k, total = 1;
 

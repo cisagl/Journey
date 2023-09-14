@@ -14,7 +14,7 @@ public class MukemmelSayiBulma {
                 total += i;
             }
         }
-        
+
         if (total == sayi) {
             System.out.println(sayi + " mükemmel sayıdır");
         } else {

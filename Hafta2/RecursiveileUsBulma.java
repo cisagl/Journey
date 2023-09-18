@@ -13,10 +13,15 @@ public class RecursiveileUsBulma {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("Lütfen üssü alınacak sayıyı giriniz: ");
-        int n = scan.nextInt();
-        System.out.print("Lütfen üs olacak sayıyı giriniz: ");
-        int k = scan.nextInt();
-        System.out.println(n + " üssü " + k + " = " + usHesap(n, k));
+
+        int i = 1;
+        while (i <= 10) {
+            System.out.print("Lütfen üssü alınacak sayıyı giriniz: ");
+            int n = scan.nextInt();
+            System.out.print("Lütfen üs olacak sayıyı giriniz: ");
+            int k = scan.nextInt();
+            System.out.println(n + " üssü " + k + " = " + usHesap(n, k));
+            i++;
+        }
     }
 }

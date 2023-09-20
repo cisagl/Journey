@@ -64,6 +64,7 @@ public class Employee {
         double bonusVeVergi = bonus - vergi + salary;
         double artis = bonus + maasArtis;
 
+        System.out.println("================================");
         System.out.println("Çalışanın ismi: " + name);
         System.out.println("Çalışanın maaşı: " + salary);
         System.out.println("Çalışanın çalışma saati: " + workHour);

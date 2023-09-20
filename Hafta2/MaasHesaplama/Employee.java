@@ -73,6 +73,7 @@ public class Employee {
         System.out.println("Çalışanın maaş artışı: " + artis);
         System.out.println("Çalışanın vergi ve bonuslarla birlikte maaşı: " + bonusVeVergi);
         System.out.println("Çalışanın toplam maaşı: "+total);
+        System.out.println("================================");
         return "İşlem Tamamlandı";
     }
 }

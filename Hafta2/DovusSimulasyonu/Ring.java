@@ -33,12 +33,14 @@ public class Ring {
         }
     }
 
+    // İlk Marc'ın vuracağı senaryo
     public void runMarcFirst() {
         f1.health -= f2.damage;
         f2.health -= f1.damage;
         printScore();
     }
 
+    // İlk Marc'ın vuracağı senaryo
     public void runAlexFirst() {
         f2.health -= f1.damage;
         f1.health -= f2.damage;

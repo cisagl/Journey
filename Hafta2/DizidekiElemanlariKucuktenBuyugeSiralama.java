@@ -17,7 +17,7 @@ public class DizidekiElemanlariKucuktenBuyugeSiralama {
         for (int i = 0; i < index; i++) {
         // Kullanıcıdan tek tek sayıları alıyoruz
             System.out.print((i + 1) + ". sayıyı giriniz: ");
-        // Aldığımız sayıları 0'dan index'e kadar topluyoruz     
+        // Aldığımız sayıları 0'dan index'e kadar topluyoruz
             liste[i] = input.nextInt();
         }
 

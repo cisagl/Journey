@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hafta2/Hafta2.iml" filepath="$PROJECT_DIR$/Hafta2/Hafta2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MayinTarlasi/MayinTarlasi.iml" filepath="$PROJECT_DIR$/MayinTarlasi/MayinTarlasi.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PatikaPlus.iml" filepath="$PROJECT_DIR$/.idea/PatikaPlus.iml" />
     </modules>
   </component>

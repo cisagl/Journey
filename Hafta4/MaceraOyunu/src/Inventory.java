@@ -1,12 +1,10 @@
 public class Inventory {
     private Weapon weapon;
     private Armor armor;
-
-    private boolean obje = false;
-    private boolean caveObje = false;
-    private boolean forestObje = false;
-    private boolean riverObje = false;
-    private boolean mineObje = false;
+    private boolean food;
+    private boolean wood;
+    private boolean water;
+    private boolean coal;
 
     public Inventory() {
         this.weapon = new Weapon("Yumruk", -1, 0, 0);
@@ -29,43 +27,35 @@ public class Inventory {
         this.armor = armor;
     }
 
-    public boolean isCaveObje() {
-        return caveObje;
+    public boolean isFood() {
+        return food;
     }
 
-    public boolean isObje() {
-        return obje;
+    public void setFood(boolean food) {
+        this.food = food;
     }
 
-    public void setObje(boolean obje) {
-        this.obje = obje;
+    public boolean isWood() {
+        return wood;
     }
 
-    public void setCaveObje(boolean caveObje) {
-        this.caveObje = caveObje;
+    public void setWood(boolean wood) {
+        this.wood = wood;
     }
 
-    public boolean isForestObje() {
-        return forestObje;
+    public boolean isWater() {
+        return water;
     }
 
-    public void setForestObje(boolean forestObje) {
-        this.forestObje = forestObje;
+    public void setWater(boolean water) {
+        this.water = water;
     }
 
-    public boolean isRiverObje() {
-        return riverObje;
+    public boolean isCoal() {
+        return coal;
     }
 
-    public void setRiverObje(boolean riverObje) {
-        this.riverObje = riverObje;
-    }
-
-    public boolean isMineObje() {
-        return mineObje;
-    }
-
-    public void setMineObje(boolean mineObje) {
-        this.mineObje = mineObje;
+    public void setCoal(boolean coal) {
+        this.coal = coal;
     }
 }

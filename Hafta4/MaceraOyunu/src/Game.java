@@ -13,21 +13,46 @@ class Game {
         player.selectChar();
 
         Location location = null;
+
+
         while (true) {
+
+            if (player.getInventory().isFood() && player.getInventory().isWood() && player.getInventory().isWater() && player.getInventory().isCoal()) {
+                System.out.println("Bütün bileşenleri topladınız ve oyunu kazandınız. TEBRİKLER!");
+                break;
+            }
+
             player.printInfo();
             System.out.println();
             System.out.println("==============Bölgeler==============");
             System.out.println();
             System.out.println("1- Güvenli Ev");
             System.out.println("2- Eşya Dükkanı");
-            System.out.println("3- Mağara || SAVAŞ ALANI!");
-            System.out.println("4- Orman || SAVAŞ ALANI!");
-            System.out.println("5- Nehir || SAVAŞ ALANI!");
-            System.out.println("6- Maden || SAVAŞ ALANI!");
+            if (!player.getInventory().isFood()) {
+                System.out.println("3- Mağara || SAVAŞ ALANI!");
+            } else {
+                System.out.println("3- Mağara || TAMAMLANDI!");
+            }
+            if (!player.getInventory().isWood()) {
+                System.out.println("4- Orman || SAVAŞ ALANI!");
+            } else {
+                System.out.println("4- Orman || TAMAMLANDI!");
+            }
+            if (!player.getInventory().isWater()) {
+                System.out.println("5- Nehir || SAVAŞ ALANI!");
+            } else {
+                System.out.println("5- Nehir || TAMAMLANDI!");
+            }
+            if (!player.getInventory().isCoal()) {
+                System.out.println("6- Maden || SAVAŞ ALANI!");
+            } else {
+                System.out.println("6- Maden || TAMAMLANDI!");
+            }
             System.out.println("0- Oyunu sonlandır");
             System.out.print("Lütfen gitmek istediğiniz bölgeyi seçiniz: ");
             System.out.println();
             int selectLoc = input.nextInt();
+
             switch (selectLoc) {
                 case 1:
                     location = new SafeHouse(player);
@@ -36,16 +61,40 @@ class Game {
                     location = new ToolStore(player);
                     break;
                 case 3:
-                    location = new Cave(player);
+                    if (player.getInventory().isFood()) {
+                        System.out.println("Ödülü zaten aldınız, güvenli eve yönlendiriliyorsunuz");
+                        System.out.println("======================================================");
+                        location = new SafeHouse(player);
+                    } else {
+                        location = new Cave(player);
+                    }
                     break;
                 case 4:
-                    location = new Forest(player);
+                    if (player.getInventory().isWood()) {
+                        System.out.println("Ödülü zaten aldınız, güvenli eve yönlendiriliyorsunuz");
+                        System.out.println("======================================================");
+                        location = new SafeHouse(player);
+                    } else {
+                        location = new Forest(player);
+                    }
                     break;
                 case 5:
-                    location = new River(player);
+                    if (player.getInventory().isWater()) {
+                        System.out.println("Ödülü zaten aldınız, güvenli eve yönlendiriliyorsunuz");
+                        System.out.println("======================================================");
+                        location = new SafeHouse(player);
+                    } else {
+                        location = new River(player);
+                    }
                     break;
                 case 6:
-                    location = new Mine(player);
+                    if (player.getInventory().isCoal()) {
+                        System.out.println("Ödülü zaten aldınız, güvenli eve yönlendiriliyorsunuz");
+                        System.out.println("======================================================");
+                        location = new SafeHouse(player);
+                    } else {
+                        location = new Mine(player);
+                    }
                     break;
                 case 0:
                     location = null;
@@ -53,14 +102,15 @@ class Game {
                 default:
                     System.out.println("Geçerli bir tuşlama yapınız");
             }
-            if (location == null){
+            if (location == null) {
                 System.out.println("Oyun sonlandırıldı");
                 break;
             }
-            if (!location.onLocation()){
+            if (!location.onLocation()) {
                 System.out.println("Game over!");
                 break;
             }
+
         }
     }
 }

@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Obstacle {
 
     private int id;
@@ -66,4 +68,5 @@ public class Obstacle {
     public void setOrjinalHealth(int orjinalHealth) {
         this.orjinalHealth = orjinalHealth;
     }
+
 }

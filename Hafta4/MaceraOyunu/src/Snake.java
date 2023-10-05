@@ -2,31 +2,16 @@ import java.util.Random;
 
 public class Snake extends Obstacle {
 
-    private int maxDamage;
-    private int minDamage;
-
     public Snake() {
-        super(4, 6, 12, "Yılan", 0 );
+        super(4, snakeDamage(), 12, "Yılan", 0);
     }
-
-    public int snakeDamage() {
+    // Yılanın hasarı 3 ila 6 arasında olacak şekilde randomize edildi
+    public static int snakeDamage() {
         Random r = new Random();
-        return r.nextInt((getMaxDamage() - getMinDamage()) + getMinDamage());
-    }
-
-    public int getMaxDamage() {
-        return maxDamage;
-    }
-
-    public void setMaxDamage(int maxDamage) {
-        this.maxDamage = maxDamage;
-    }
-
-    public int getMinDamage() {
-        return minDamage;
-    }
-
-    public void setMinDamage(int minDamage) {
-        this.minDamage = minDamage;
+        int random = r.nextInt((7 - 3) + 3);
+        if (random < 3){
+            random += 3;
+        }
+        return random;
     }
 }

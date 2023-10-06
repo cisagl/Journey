@@ -6,9 +6,9 @@ class Game {
     public void start() {
 
         System.out.println("\t\t\tMacera oyunu!");
-        // System.out.print("Lütfen bir isim giriniz: ");
-        // String playerName = input.nextLine();
-        Player player = new Player("CCCC");
+        System.out.print("Lütfen bir isim giriniz: ");
+        String playerName = input.nextLine();
+        Player player = new Player(playerName);
         System.out.println(player.getName() + " Hoşgeldiniz!");
         player.selectChar();
 

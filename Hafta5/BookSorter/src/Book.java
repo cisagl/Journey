@@ -14,6 +14,7 @@ public class Book implements Comparable<Book> {
         this.publishDate = publishDate;
     }
 
+    //  Kitaplar isimlerine göre alfabetik olarak sıralandı
     @Override
     public int compareTo(Book otherBook) {
         return this.getName().compareTo(otherBook.getName());

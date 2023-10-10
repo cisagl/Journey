@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hafta5/BookSorter/BookSorter.iml" filepath="$PROJECT_DIR$/Hafta5/BookSorter/BookSorter.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hafta5/Exceptions/Exceptions.iml" filepath="$PROJECT_DIR$/Hafta5/Exceptions/Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hafta2/Hafta2.iml" filepath="$PROJECT_DIR$/Hafta2/Hafta2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hafta4/Hafta4.iml" filepath="$PROJECT_DIR$/Hafta4/Hafta4.iml" />

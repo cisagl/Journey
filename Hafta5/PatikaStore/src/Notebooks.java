@@ -18,7 +18,7 @@ public class Notebooks extends CommonFeatures {
         modelSet.add(tufgaming);
     }
 
-    // Cep telefonu işlemleri seçeneği seçildiğinde ne yapılacağı sorgusu kullanıcıya iletildi
+    // Notebook işlemleri seçeneği seçildiğinde ne yapılacağı sorgusu kullanıcıya iletildi
     public static void whatToDo() {
         Scanner input = new Scanner(System.in);
         modelsOfNoteBooks();

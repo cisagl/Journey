@@ -11,10 +11,10 @@ public class Run {
             int select = input.nextInt();
             switch (select) {
                 case 1:
-                    Notebooks.whatToDo();
+                    NotebookOperations.whatToDo();
                     break;
                 case 2:
-                    MobilePhones.whatToDo();
+                    MobilePhoneOperations.whatToDo();
                     break;
                 case 3:
                     Brand.brands();

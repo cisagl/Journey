@@ -7,7 +7,6 @@ public class Main {
 
         String fileName = "patika.txt";
 
-
         try {
             FileWriter newFile = new FileWriter(fileName);
             byte[] numbers = {5, 10, 20, 12, 33};

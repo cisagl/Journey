@@ -3,7 +3,7 @@ import java.sql.*;
 public class Main {
     public static final String DB_URL = "jdbc:mysql://localhost/company";
     public static final String DB_USER = "****"; // USERNAME
-    public static final String DB_PASSWORD = "****"; // PASWORD
+    public static final String DB_PASSWORD = "****"; // PASSWORD
 
     public static void main(String[] args) throws SQLException {
         Connection connect = null;

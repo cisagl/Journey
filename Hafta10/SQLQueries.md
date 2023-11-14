@@ -83,7 +83,7 @@ SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4;
 ### Practice 6:
 
 ```bash
-# Task 1: film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
+# Task 1: Film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
 SELECT AVG(rental_rate) FROM film;
 
 # Task 2: Film tablosunda bulunan filmlerden kaç tanesi 'C' karakteri ile başlar?

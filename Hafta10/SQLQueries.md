@@ -1,6 +1,6 @@
-## SQL PRACTISES
+## SQL PRACTICES
 
-### Practise 1:
+### Practice 1:
 
 ```bash
 # Task 1: Film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
@@ -19,7 +19,7 @@ SELECT first_name, last_name FROM customer WHERE first_name = 'Mary';
 SELECT * FROM film WHERE length < 50 AND rental_rate != 2.99 OR rental_rate != 4.99;
 ```
 
-### Practise 2:
+### Practice 2:
 
 ```bash
 # Task 1: Film tablosunda bulunan tüm sütunlardaki verileri replacement cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.)

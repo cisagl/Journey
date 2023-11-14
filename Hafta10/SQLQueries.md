@@ -66,3 +66,16 @@ SELECT COUNT(country) FROM country WHERE country LIKE '_____';
 # Task 5: City tablosundaki şehir isimlerinin kaç tanesi 'R' ile başlar veya 'r' karakteri ile biter?
 SELECT COUNT(city) FROM city WHERE city ILIKE 'R%' OR city ILIKE '%r';
 ```
+
+### Practice 5:
+
+```bash
+# Task 1: Film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
+SELECT * FROM film WHERE title LIKE '%n' ORDER BY length DESC LIMIT 5;
+
+# Task 2: Film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci(6,7,8,9,10) 5 filmi(6,7,8,9,10) sıralayınız.
+SELECT * FROM film WHERE title LIKE '%n' ORDER BY length ASC OFFSET 5 LIMIT 5;
+
+# Task 3: Customer tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.SELECT COUNT(*) FROM film WHERE title LIKE 'T%' AND rating = 'G';
+SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4;
+```

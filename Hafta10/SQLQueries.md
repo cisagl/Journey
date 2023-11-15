@@ -217,7 +217,7 @@ SELECT rental.rental_id, CONCAT(customer.first_name, ' ', customer.last_name) AS
 FULL JOIN customer ON rental.customer_id = customer.customer_id;
 ```
 
-### Practice 10:
+### Practice 11:
 
 ```bash
 # Task 1: Actor ve customer tablolarında bulunan first_name sütunları için tüm verileri sıralayalım.

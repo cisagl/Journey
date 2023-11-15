@@ -183,5 +183,20 @@ DELETE FROM employee WHERE id % 2 != 0;
 DELETE FROM employee WHERE birthday < '1985-10-10';
 DELETE FROM employee WHERE name ILIKE 'a%';
 DELETE FROM employee WHERE email LIKE 'P%'
+```
 
+### Practice 9:
+
+```bash
+# Task 1: City tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+SELECT city.city, country.country FROM city 
+INNER JOIN country ON city.country_id = country.country_id;
+
+# Task 2: Customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+SELECT payment.payment_id, CONCAT(customer.first_name, ' ',  customer.last_name) AS customer FROM customer 
+INNER JOIN payment ON customer.customer_id = payment.customer_id;
+
+# Task 3: Customer tablosu ile rental tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+SELECT rental.rental_id, CONCAT(customer.first_name, ' ', customer.last_name) AS customer FROM customer 
+INNER JOIN rental ON customer.customer_id = rental.customer_id;
 ```

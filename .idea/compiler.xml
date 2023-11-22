@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="JPA" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="DBss" target="20" />
       <module name="Hafta11" target="20" />
     </bytecodeTargetLevel>
   </component>

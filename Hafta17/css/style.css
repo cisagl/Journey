@@ -1,0 +1,39 @@
+body {
+    background-color: blanchedalmond;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px #000000;
+    color: #176B87;
+}
+
+.main-games {
+    text-align: center;
+}
+
+.game-name {
+    text-shadow: 0px 4px ;
+    border: 2px solid #000000;
+}
+
+.section-games:nth-child(even) {
+    background-color: #86B6F6;
+}
+
+.section-games:nth-child(odd) {
+    background-color: #b3cff3;
+}
+
+.summary {
+    text-align: center;
+}
+
+.img-games {
+    vertical-align:middle;
+}
+
+.price {
+    font-weight: bolder;
+    color: darkolivegreen;
+}

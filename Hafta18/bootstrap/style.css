@@ -1,0 +1,91 @@
+body {
+    background-color: #E9ECEF;
+    margin: 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+  }
+
+  .title h1:hover {
+    transform: scale(1.05);
+  }
+
+  .title img {
+    padding-right: 10px;
+  }
+
+  .title img:hover {
+    animation: rotate 0.5s infinite linear;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .menu {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .ul-menu {
+    padding-left: 0px;
+  }
+
+  .ul-menu li {
+    display: inline-block;
+    list-style: none;
+    flex-direction: row;
+    width: auto;
+    padding-right: 10px;
+  }
+
+  .ul-menu li:hover {
+    transform: scale(1.1);
+  }
+
+  footer {
+    background-color: #444444;
+    padding: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    min-height: 75vh;
+    padding-top: 2vh;
+    padding-bottom: 10vh;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .jumbotron {
+    padding-top: 15%;
+  }
+
+  .jumbotron h1 {
+    font-size: 100px;
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }

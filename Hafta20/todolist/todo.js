@@ -16,11 +16,10 @@ function addTask() {
   let task = input.value;
 
   if (task === "") {
-    $("#liveToast .toast-body").text("Listeye boş ekleme yapamazsınız!");
-    $("#liveToast").addClass("error").toast("show");
+    showToast("error", "Listeye boş ekleme yapamazsınız!");
   } else {
-    $("#liveToast .toast-body").text("Başarıyla Eklendi!");
-    $("#liveToast").addClass("success").toast("show");
+    showToast("success", "Başarıyla eklendi!");
+
     let li = document.createElement("li");
     li.innerText = task;
     list.appendChild(li);
@@ -41,8 +40,7 @@ function removeTask() {
   let li = this.parentNode;
   let ul = li.parentNode;
   ul.removeChild(li);
-  $("#liveToast .toast-body").text("Başarıyla Silindi!");
-  $("#liveToast").addClass("success").toast("show");
+  showToast("success", "Başarıyla silindi!");
   localStorage.setItem("list", list.innerHTML);
 }
 

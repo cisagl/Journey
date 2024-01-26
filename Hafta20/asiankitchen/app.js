@@ -28,7 +28,7 @@ const menu = [
     title: "Dan Dan Mian",
     category: "China",
     price: 5.99,
-    img: "https://www.savingdessert.com/wp-content/uploads/2019/02/Dan-Dan-Noodles-10.jpg",
+    img: "https://omnivorescookbook.com/wp-content/uploads/2017/04/2002_Dan-Dan-Noodles_550.jpg",
     desc: `Dan dan noodle, serving with green onion `,
   },
   {

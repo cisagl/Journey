@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+#headerTitle {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.dollar {
+  color: green;
+  text-align: center;
+}
+
+.heads{
+  background-color: #ddd;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.menu {
+  background-color: #ddd;
+}
+
+
+.card {
+  margin: 30px auto;
+  border: 1px solid black;
+  width: 300px;
+  height: 320px;
+  background-color: white;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  padding-top: 100px;
+}
+
+.cardImg {
+  width: 200px;
+  height: 200px;
+  padding-top: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+.cardPiece {
+  margin: 0px 10px 0px 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.receipt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.receipt ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}

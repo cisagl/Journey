@@ -1,3 +1,3 @@
 # StarWars Ships Viewer
 
-![StarWars](/star-wars/ss.png)
+![StarWars](ss.png)

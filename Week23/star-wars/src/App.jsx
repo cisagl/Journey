@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/starships" element={<Card />} />
+        <Route path="*" element={<Card />} />
         <Route path="/Ship/:model" element={<Ship  />} />
       </Routes>
     </BrowserRouter>
